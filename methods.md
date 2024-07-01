@@ -1,3 +1,15 @@
+
+### Codes couleurs des priorités
+- 🔵 : A faire en priorité
+- 🟢 : A faire 
+- 🟡 : Possiblement à faire
+- 🔴 : Pas nécessaire
+
+### Codes couleurs de l'implémentation en PySpark
+- ✔️ : Facilement implémentable en PySpark
+- ➖ : Implémentable en PySpark
+- ✖️ : Difficilement implémentable en PySpark
+
 ## Données
 
 - 🔵 **Transactions** : Quel client a acheté quel panier contenant quel produit.
@@ -20,40 +32,40 @@
 ## Algorithmes
 
 - ### Matrix Factorization
-    - 🔵 **SVD Matrix Factorization** : Factorisation de la matrice d'interactions par décomposition SVD.
-    - 🟢 **ALS Matrix Factorization** : Factorisation de la matrice d'interactions par optimisation ALS.
-    - 🟡 **NMF Matrix Factorization** : Factorisation de la matrice d'interactions positive pour interpréter les corrélations.
-    - 🟡 **PMF Matrix Factorization** : Factorisation probabiliste de la matrice d'interactions.
+    - 🔵➖ **SVD Matrix Factorization** : Factorisation de la matrice d'interactions par décomposition SVD.
+    - 🟢✔️ **ALS Matrix Factorization** : Factorisation de la matrice d'interactions par optimisation ALS.
+    - 🟡✖️ **NMF Matrix Factorization** : Factorisation de la matrice d'interactions positive pour interpréter les corrélations.
+    - 🟡✖️ **PMF Matrix Factorization** : Factorisation probabiliste de la matrice d'interactions.
 
 - ### Deep Learning
-    - 🟢 **Neural Collaborative Filtering** : Utilisation de réseaux de neurones pour modéliser les interactions utilisateurs-articles.
-    - 🟢 **DeepFM** : Combinaison de la factorisation matricielle et du deep learning pour capturer les interactions non linéaires.
-    - 🟡 **Autoencoders** : Réseaux de neurones utilisés pour apprendre une représentation compacte des données d'interactions.
-    - 🔴 **Sequence-Aware RNN** : RNN pour complétion de paniers en tenant compte de l'ordre des interactions.
-    - 🔴 **Attention** : Complétion de paniers basée sur le mécanisme d'attention pour pondérer l'importance des interactions passées.
+    - 🟢✖️ **Neural Collaborative Filtering** : Utilisation de réseaux de neurones pour modéliser les interactions utilisateurs-articles.
+    - 🟢✖️ **DeepFM** : Combinaison de la factorisation matricielle et du deep learning pour capturer les interactions non linéaires.
+    - 🟡✖️  **Autoencoders** : Réseaux de neurones utilisés pour apprendre une représentation compacte des données d'interactions.
+    - 🔴✖️ **Sequence-Aware RNN** : RNN pour complétion de paniers en tenant compte de l'ordre des interactions.
+    - 🔴✖️ **Attention** : Complétion de paniers basée sur le mécanisme d'attention pour pondérer l'importance des interactions passées.
 
 - ### Clustering
-    - 🟢 **K-Means** : Moyenne des plus proches voisins pour regrouper les utilisateurs ou articles similaires.
-    - 🟡 **DBSCAN** : Clustering basé sur la densité pour identifier les clusters denses et isoler le bruit.
-    - 🟡 **Hierarchical Clustering** : Clustering hiérarchique pour créer une hiérarchie de clusters imbriqués.
+    - 🟢✔️ **K-Means** : Moyenne des plus proches voisins pour regrouper les utilisateurs ou articles similaires.
+    - 🟡➖ **DBSCAN** : Clustering basé sur la densité pour identifier les clusters denses et isoler le bruit.
+    - 🟡➖ **Hierarchical Clustering** : Clustering hiérarchique pour créer une hiérarchie de clusters imbriqués.
 
 - ### Association Rules
-    - 🔵 **Apriori Algorithm** : Algorithme classique pour l'analyse de panier d'achat (Market Basket Analysis).
-    - 🟢 **FP-Growth Algorithm** : Algorithme scalable pour découvrir des motifs fréquents sans génération de candidats explicite.
-    - 🟡 **Eclat Algorithm** : Algorithme simple et efficace pour trouver des ensembles d'éléments fréquents via l'intersection de listes.
+    - 🔵✖️ **Apriori Algorithm** : Algorithme classique pour l'analyse de panier d'achat (Market Basket Analysis).
+    - 🟢✔️ **FP-Growth Algorithm** : Algorithme scalable pour découvrir des motifs fréquents sans génération de candidats explicite.
+    - 🟡➖ **Eclat Algorithm** : Algorithme simple et efficace pour trouver des ensembles d'éléments fréquents via l'intersection de listes.
 
 - ### Reinforcement Learning
-    - 🟡 **Q-Learning** : Apprentissage par renforcement basé sur une table de Q-valeurs pour maximiser les récompenses cumulées.
-    - 🟡 **Deep Q-Learning** : Utilisation de réseaux de neurones pour approximer les Q-valeurs dans des environnements complexes.
-    - 🟡 **Policy Gradient** : Optimisation directe des politiques par descente de gradient pour maximiser la récompense attendue.
-    - 🔴 **Actor-Critic** : Combinaison de la politique et de la valeur pour améliorer la stabilité et la performance de l'apprentissage.
+    - 🟡✖️ **Q-Learning** : Apprentissage par renforcement basé sur une table de Q-valeurs pour maximiser les récompenses cumulées.
+    - 🟡✖️ **Deep Q-Learning** : Utilisation de réseaux de neurones pour approximer les Q-valeurs dans des environnements complexes.
+    - 🟡✖️ **Policy Gradient** : Optimisation directe des politiques par descente de gradient pour maximiser la récompense attendue.
+    - 🔴✖️ **Actor-Critic** : Combinaison de la politique et de la valeur pour améliorer la stabilité et la performance de l'apprentissage.
 
 - ### Bandit Algorithms
-    - 🟡 **`ε`-Greedy** : Sélection d'actions équilibrant exploration et exploitation avec une probabilité `ε`.
-    - 🔴 **UCB** : Utilisation de la borne supérieure de confiance pour l'équilibre exploration-exploitation.
-    - 🔴 **Thompson Sampling** : Stratégie pour sélectionner les actions dans la distribution de probabilité des récompenses.
-    - 🔴 **LinUCB** : Extension de UCB utilisant des modèles linéaires pour capturer les dépendances contextuelles.
-    - 🔴 **LinThompson** : Version contextuelle de Thompson Sampling utilisant des modèles linéaires pour la sélection d'actions.
+    - 🟡➖ **ε-Greedy** : Sélection d'actions équilibrant exploration et exploitation avec une probabilité ε.
+    - 🔴✖️ **UCB** : Utilisation de la borne supérieure de confiance pour l'équilibre exploration-exploitation.
+    - 🔴✖️ **Thompson Sampling** : Stratégie pour sélectionner les actions dans la distribution de probabilité des récompenses.
+    - 🔴✖️ **LinUCB** : Extension de UCB utilisant des modèles linéaires pour capturer les dépendances contextuelles.
+    - 🔴✖️ **LinThompson** : Version contextuelle de Thompson Sampling utilisant des modèles linéaires pour la sélection d'actions.
 
 ### Combinaison de méthodes
 
