@@ -13,8 +13,8 @@
 - 🟢 **Item-Based CF** : Basée sur les similarités entre les comportements d'achet des produits.
 - 🟢 **Ticket-Based CF** : Recommandations ciblées sur un panier pour le compléter, basées sur les similarités entre paniers.
 - 🟢 **Market Basket Analysis** : Analyse des produits achetés généralement ensemble.
-- 🟡 **Factorization Machines ?** :
-- 🟡 **Bandit Methods** : 
+- 🟡 **Factorization Machines** : Modélisation des interactions entre variables en utilisant des vecteurs de facteurs latents.
+- 🟡 **Bandit Methods** : Sélection des articles pour maximiser les récompenses cumulées par équilibre exploration-exploitation.
 - 🔴 **Sequence-Aware Models** : Modèle qui tiennent compte de l'ordre de constitution des paniers.
 
 ## Algorithmes
@@ -46,12 +46,12 @@
     - 🟡 **Q-Learning** : Apprentissage par renforcement basé sur une table de Q-valeurs pour maximiser les récompenses cumulées.
     - 🟡 **Deep Q-Learning** : Utilisation de réseaux de neurones pour approximer les Q-valeurs dans des environnements complexes.
     - 🟡 **Policy Gradient** : Optimisation directe des politiques par descente de gradient pour maximiser la récompense attendue.
-    - 🔴 **Actor-Critic** : Combinaison de la politique (actor) et de la valeur (critic) pour améliorer la stabilité et la performance de l'apprentissage.
+    - 🔴 **Actor-Critic** : Combinaison de la politique et de la valeur pour améliorer la stabilité et la performance de l'apprentissage.
 
 - ### Bandit Algorithms
     - 🟡 **`ε`-Greedy** : Sélection d'actions équilibrant exploration et exploitation avec une probabilité `ε`.
     - 🔴 **UCB** : Utilisation de la borne supérieure de confiance pour l'équilibre exploration-exploitation.
-    - 🔴 **Thompson Sampling** : Stratégie probabiliste pour sélectionner les actions basées sur la distribution de probabilité des récompenses.
+    - 🔴 **Thompson Sampling** : Stratégie pour sélectionner les actions dans la distribution de probabilité des récompenses.
     - 🔴 **LinUCB** : Extension de UCB utilisant des modèles linéaires pour capturer les dépendances contextuelles.
     - 🔴 **LinThompson** : Version contextuelle de Thompson Sampling utilisant des modèles linéaires pour la sélection d'actions.
 
@@ -71,9 +71,9 @@
 
 ## Evaluation
 
-- 🔵 **Précision@K**
-- 🟡 **Multi-Objective Optimization**
-- 🟡 **Rule-Based Optimization**
+- 🔵 **Précision@K** : Part des produits tests ayant été placés dans le top K des recommandations.
+- 🟡 **Multi-Objective Optimization** : Objectifs personnalisés de précision, diversité ...
+- 🟡 **Rule-Based Optimization** : Objectifs de vente particuliers aux besoin du métier.
 
 ## Se renseigner
 
